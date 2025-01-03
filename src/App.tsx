@@ -1,7 +1,16 @@
+import About from "./components/About";
+import Footer from "./components/Footer";
+import Hero from "./components/Hero";
+import Nav from "./components/Nav/Nav";
+import Works from "./components/Works/Works";
 function App() {
   return (
     <>
-      <h1 className="text-4xl font-bold text-center">Hello World</h1>
+      <Nav />
+      <Hero />
+      <About />
+      <Works />
+      <Footer />
     </>
   );
 }
