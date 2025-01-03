@@ -7,4 +7,5 @@ body {
   overscroll-behavior: none; /* Prevent overscroll behavior */
   /* Disable scrolling entirely */
   /* Ensure the page fills the viewport */
+  scroll-behavior: smooth;
 }

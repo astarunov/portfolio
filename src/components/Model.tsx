@@ -32,7 +32,7 @@ const Model: React.FC<{ scale?: number }> = (props) => {
     }
   });
 
-  return <primitive object={scene} ref={ref} scale={1.5} {...props} />; // Adjust scale to fit
+  return <primitive object={scene} ref={ref} scale={2.2} {...props} />; // Adjust scale to fit
 };
 
 // Main component

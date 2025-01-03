@@ -34,22 +34,25 @@ const Nav: React.FC = () => {
           {/* Navigation Links */}
           <ul className="flex space-x-6 font-plex text-[16px]">
             <li>
-              <a href="#" className="transition duration-300">
+              <a
+                href="#about"
+                className="transition duration-300 hover:text-gray-400"
+              >
                 about
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="hover:text-gray-400 transition duration-300"
+                href="#works"
+                className="transition duration-300 hover:text-gray-400"
               >
                 works
               </a>
             </li>
             <li>
               <a
-                href="#"
-                className="hover:text-gray-400 transition duration-300"
+                href="#contact"
+                className="transition duration-300 hover:text-gray-400"
               >
                 contact
               </a>

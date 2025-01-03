@@ -7,9 +7,9 @@ const Footer: React.FC = () => {
         <img
           src={footerShape}
           alt="footer shape"
-          className="w-[172px] h-[172px]"
+          className="w-[172px] h-[172px] mt-4"
         />
-        <h1 className="mt-5 font-bebas text-[250px] leading-[180px]">
+        <h1 className="mt-16 font-bebas text-[250px] leading-[200px]">
           LET’S
           <br />
           <span className="text-[#EEAB3C]">CONNECT</span>
@@ -23,10 +23,15 @@ const Footer: React.FC = () => {
         <div className="absolute bottom-0 flex flex-col w-[90%]">
           <div className="w-full h-[1px] bg-white mt-3"></div>
           <ul className="flex flex-row gap-[10vw] mx-auto my-5">
-            <li className="text-[16px] font-plex">instagram</li>
-            <li className="text-[16px] font-plex">linkedin</li>
-            <li className="text-[16px] font-plex">github</li>
-            <li className="text-[16px] font-plex">telegram</li>
+            <li className="text-[16px] font-plex">
+              <a href="https://www.linkedin.com/in/astarunov/">linkedin</a>
+            </li>
+            <li className="text-[16px] font-plex">
+              <a href="https://github.com/astarunov">github</a>
+            </li>
+            <li className="text-[16px] font-plex">
+              <a href="https://t.me/astarunovv">telegram</a>
+            </li>
           </ul>
         </div>
       </div>

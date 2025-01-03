@@ -3,7 +3,7 @@ import { works } from "../../constants";
 
 const Works: React.FC = () => {
   return (
-    <section className="py-[10rem] bg-[#1F1F1F] px-[5%] text-white">
+    <section className="py-[5rem] bg-[#1F1F1F] px-[5%] text-white" id="works">
       <div className="flex flex-col">
         <div className="flex flex-row items-baseline">
           <img
@@ -13,20 +13,23 @@ const Works: React.FC = () => {
           />
           <h1 className="text-[200px] font-bebas leading-none ml-8">WORKS</h1>
         </div>
-        <div className="flex flex-row justify-between mt-5">
+        <div className="flex flex-col justify-between mt-5 w-full">
           {works.map((work, idx) => (
             <div
               key={idx}
-              className="w-1/2 flex flex-col p-2 items-center"
-              style={{ marginTop: `${idx * 20}rem` }}
+              className={`w-1/2 flex flex-col p-6 ${
+                idx % 2 === 0 ? "self-start" : "self-end"
+              }`}
             >
               <img
                 src={work.image}
                 alt={`${work.title} image`}
                 className="w-full rounded-[20px]"
               />
-
-              <div className="flex flex-wrap w-full gap-2 justify-center w-full mt-3">
+              <p className="mt-3 text-[32px] font-plex text-center">
+                {work.title}
+              </p>
+              <div className="flex flex-wrap gap-2 justify-center w-full mt-3">
                 {work.stack.map((stack, stackIdx) => (
                   <div
                     key={stackIdx}
@@ -36,9 +39,6 @@ const Works: React.FC = () => {
                   </div>
                 ))}
               </div>
-              <p className="mt-3 text-[32px] font-plex text-center">
-                {work.title}
-              </p>
             </div>
           ))}
         </div>

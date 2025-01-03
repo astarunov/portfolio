@@ -12,6 +12,7 @@ export const works = [
       "PosgreSQL",
       "Neon",
       "TypeScript",
+      "Figma",
     ],
   },
   {
@@ -24,6 +25,8 @@ export const works = [
       "Notion API",
       "GitHub API",
       "TypeScript",
+      "Figma",
+      "Flask",
     ],
   },
 ];
