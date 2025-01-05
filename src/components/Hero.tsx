@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
   const getCurrentDate = () => {
     const date = new Date();
     const day = date.getDate().toString().padStart(2, "0"); // Add leading zero
-    const month = date.toLocaleString("en-US", { month: "short" }); // Get month as "Jan", "Feb", etc.
+    const month = date.toLocaleString("de-DE", { month: "short" }); // Get month as "Jan", "Feb", etc. in German format
     return `${day} ${month}`;
   };
 

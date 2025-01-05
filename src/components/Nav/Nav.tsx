@@ -32,30 +32,15 @@ const Nav: React.FC = () => {
           </div>
 
           {/* Navigation Links */}
-          <ul className="flex space-x-6 font-plex text-[16px]">
-            <li>
-              <a
-                href="#about"
-                className="transition duration-300 hover:text-gray-400"
-              >
-                about
-              </a>
+          <ul className="flex space-x-3 md:space-x-6 font-plex text-[16px]">
+            <li className="transition duration-300 hover:scale-110">
+              <a href="#about">about</a>
             </li>
-            <li>
-              <a
-                href="#works"
-                className="transition duration-300 hover:text-gray-400"
-              >
-                works
-              </a>
+            <li className="transition duration-300 hover:scale-110">
+              <a href="#works">works</a>
             </li>
-            <li>
-              <a
-                href="#contact"
-                className="transition duration-300 hover:text-gray-400"
-              >
-                contact
-              </a>
+            <li className="transition duration-300 hover:scale-110">
+              <a href="#contact">contact</a>
             </li>
           </ul>
         </div>

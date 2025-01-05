@@ -76,11 +76,11 @@ const Footer: React.FC = () => {
       "
     >
       {/* Interested Text */}
-      <div className="absolute z-20 top-[30vh] h-[100vh] flex flex-col items-center w-full">
+      <div className="absolute z-20 top-[30vh] h-[100vh] text-center flex flex-col items-center w-full">
         <h1 className="text-[64px] font-lancelot  leading-[64px]">
           I am always <span className="text-[#EEAB3C]">interested</span> in
         </h1>
-        <div className="flex flex-wrap w-[900px] justify-center mt-10 gap-4">
+        <div className="flex flex-wrap w-[90%] md:w-[900px] justify-center mt-10 gap-4">
           {Array.from({ length: 14 }).map((_, idx) => (
             <div key={`spacer-${idx}`}>
               {idx === 4 && (

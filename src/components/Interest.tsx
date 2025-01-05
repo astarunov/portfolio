@@ -24,7 +24,7 @@ const Interest: React.FC = () => {
     <div
       className="relative overflow-hidden rounded-[50px]
              border border-white text-white text-[32px]
-             flex items-center justify-center cursor-pointer w-[200px] h-[50px]"
+             flex items-center justify-center cursor-pointer w-[130px] md:w-[200px] h-[50px]"
     >
       <InfiniteMovingCards
         items={testimonials}
