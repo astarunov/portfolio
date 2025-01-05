@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import footerShape from "../assets/footerShape.svg";
 import arrow from "../assets/arrow.svg";
+import mobileBG from "../assets/mobile-bg.svg";
 
 import Interest from "./Interest";
 
@@ -63,7 +64,7 @@ const Footer: React.FC = () => {
         relative
         w-screen
         h-[200vh]
-        bg-hero-bg
+        md:bg-hero-bg
         
         bg-cover
         bg-center
@@ -74,6 +75,9 @@ const Footer: React.FC = () => {
         text-white
         
       "
+      style={{
+        backgroundImage: `url(${mobileBG})`,
+      }}
     >
       {/* Interested Text */}
       <div className="absolute z-20 top-[30vh] h-[100vh] text-center flex flex-col items-center w-full">
@@ -94,7 +98,7 @@ const Footer: React.FC = () => {
 
       {/* Black Overlay */}
       <div
-        className="pointer-events-none absolute inset-0 z-10"
+        className="pointer-events-none absolute mt-[-1rem] inset-0 z-10"
         style={{
           backgroundColor: "#1F1F1F",
           opacity: overlayOpacity,

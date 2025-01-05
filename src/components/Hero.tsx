@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Star from "./Star";
+import mobileBG from "../assets/mobile-bg.svg";
 
 const Hero: React.FC = () => {
   const [overlayOpacity, setOverlayOpacity] = useState(0);
@@ -45,16 +46,18 @@ const Hero: React.FC = () => {
     <section
       ref={heroRef}
       className={`
-        relative
-        h-[200vh]
-        md:bg-hero-bg
-        bg-mobile-bg
-        bg-cover
-        bg-fixed
-        bg-top
-        text-white
-        px-[5%]
-      `}
+    relative
+    h-[200vh]
+    md:bg-hero-bg
+    bg-cover
+    bg-fixed
+    bg-center
+    text-white
+    px-[5%]
+  `}
+      style={{
+        backgroundImage: `url(${mobileBG})`,
+      }}
     >
       {/* Always visible SVG */}
       <div className="absolute top-[50%] left-[5vw] z-10 flex flex-row gap-96 items-center">
@@ -87,7 +90,7 @@ const Hero: React.FC = () => {
 
       {/* Hero content */}
       <div className="h-screen flex flex-col justify-end">
-        <div className="absolute right-[10vw] top-[20vh] flex flex-row items-center">
+        <div className="absolute right-[5vw] md:right-[10vw] top-[20vh] flex flex-row items-center">
           <Star width="50px" height="50px" color="#EEAB3C" />
           <h1 className="text-[80px] leading-[80px] md:text-[128px] font-poiret md:leading-[128px] m-0">
             {currentDate.split(" ")[0]}
