@@ -51,7 +51,7 @@ const Hero: React.FC = () => {
         bg-mobile-bg
         bg-cover
         bg-fixed
-        bg-center
+        bg-top
         text-white
         px-[5%]
       `}
