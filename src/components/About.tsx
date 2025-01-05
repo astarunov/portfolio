@@ -36,8 +36,8 @@ const About: React.FC = () => {
             <path
               d="M824.5 43.0001C516 -54.9999 429 37.5001 421.5 186C414 334.5 76.4999 187 5.49987 399C5.49987 399 -25.0178 556.302 93.9998 602.5C213.018 648.698 398.931 632.189 512 532.5"
               stroke="#FFFEFE"
-              stroke-width="4"
-              stroke-linecap="round"
+              strokeWidth="4"
+              strokeLinecap="round"
             />
             <line
               x1="823.525"
@@ -45,8 +45,8 @@ const About: React.FC = () => {
               x2="747.788"
               y2="97.475"
               stroke="white"
-              stroke-width="4"
-              stroke-linecap="round"
+              strokeWidth="4"
+              strokeLinecap="round"
             />
           </svg>
           <h3 className="absolute text-[24px] right-[22vw] bottom-10 font-plex leading-none">

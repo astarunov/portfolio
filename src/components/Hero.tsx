@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import Star from "./Star";
-import bgImage from "../assets/bgImage.jpg";
 
 const Hero: React.FC = () => {
   const [overlayOpacity, setOverlayOpacity] = useState(0);
@@ -48,7 +47,7 @@ const Hero: React.FC = () => {
       className={`
         relative
         h-[200vh]
-        bg-url(${bgImage})
+        bg-hero-bg
         bg-cover
         bg-fixed
         bg-center

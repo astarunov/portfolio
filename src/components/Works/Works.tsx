@@ -33,8 +33,8 @@ const Works: React.FC = () => {
             <path
               d="M2 2.50049C341.89 -4.07579 384.5 97 384.5 407.5"
               stroke="#FFFEFE"
-              stroke-width="4"
-              stroke-linecap="round"
+              strokeWidth="4"
+              strokeLinecap="round"
             />
             <line
               x1="384.172"
@@ -42,8 +42,8 @@ const Works: React.FC = () => {
               x2="324"
               y2="347.828"
               stroke="white"
-              stroke-width="4"
-              stroke-linecap="round"
+              strokeWidth="4"
+              strokeLinecap="round"
             />
           </svg>
         </div>

@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF } from "@react-three/drei";
 import * as THREE from "three";
-
+import vierge3GLB from "../assets/vierge3.glb";
 // TypeScript type for GLTF
 type GLTFResult = {
   scene: THREE.Scene;
@@ -11,7 +11,7 @@ type GLTFResult = {
 
 // Model component
 const Model: React.FC<{ scale?: number }> = (props) => {
-  const { scene } = useGLTF("/vierge3.glb") as unknown as GLTFResult;
+  const { scene } = useGLTF(vierge3GLB) as unknown as GLTFResult;
 
   // Reference to the scene for rotation
   const ref = useRef<THREE.Group>(null);
@@ -65,4 +65,4 @@ const MainFunk: React.FC = () => {
 export default MainFunk;
 
 // Drei's GLTF loader declaration
-useGLTF.preload("/vierge.glb");
+useGLTF.preload(vierge3GLB);
