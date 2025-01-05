@@ -32,7 +32,8 @@ const Star: React.FC<StarProps> = ({ width, height, color }) => {
         alignItems: "center",
         transform: `rotate(${rotation}deg)`,
         transformOrigin: "center", // Set the rotation center to the middle
-        transition: "transform 0.1s linear", // Smooth rotation
+        transition: "transform 0.1s linear",
+        // Smooth rotation
       }}
     >
       <svg

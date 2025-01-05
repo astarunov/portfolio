@@ -113,17 +113,21 @@ const Footer: React.FC = () => {
           <img
             src={footerShape}
             alt="footer shape"
-            className="w-[172px] h-[172px] mt-4"
+            className="w-[100px] h-[100px] md:w-[172px] md:h-[172px] mt-4"
           />
-          <h1 className="mt-8 font-bebas text-[250px] leading-[200px]">
+          <h1 className="mt-8 font-bebas text-[100px] leading-[80px] md:text-[250px] md:leading-[200px]">
             LET’S
             <br />
             <span className="text-[#EEAB3C]">CONNECT</span>
           </h1>
-          <div className="flex flex-row w-full justify-end items-center">
-            <img src={arrow} alt="arrow" className="w-[98px] h-[25px]" />
+          <div className="flex flex-row w-full justify-end items-start md:items-center mt-4">
+            <img
+              src={arrow}
+              alt="arrow"
+              className="w-[50px] h-[14px] md:w-[98px] md:h-[25px]"
+            />
             <p
-              className="text-[48px] leading-none font-bebas cursor-pointer"
+              className="text-[30px] leading-[30px] md:text-[48px] md:leading-none font-bebas cursor-pointer"
               onClick={() => copyToClipboard("astarunov444@gmail.com")}
             >
               astarunov444@gmail.com

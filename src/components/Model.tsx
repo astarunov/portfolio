@@ -46,7 +46,8 @@ const MainFunk: React.FC = () => {
         right: "-10vw", // Adjust position from the right
         width: "1000px",
         height: "1000px",
-        pointerEvents: "none", // Ensure it doesn't block interactions
+        pointerEvents: "none",
+        zIndex: "5", // Ensure it doesn't block interactions
       }}
     >
       <Canvas

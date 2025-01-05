@@ -25,7 +25,7 @@ const Nav: React.FC = () => {
           <div className="text-[24px] font-lancelot">
             <a href="#">
               Artem Starunov
-              <span className="text-[16px] font-plex ml-8">
+              <span className="hidden md:inline text-[16px] font-plex ml-8">
                 FRONTEND DEVELOPER
               </span>
             </a>

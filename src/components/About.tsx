@@ -7,12 +7,12 @@ const About: React.FC = () => {
       className="pt-[10rem] pb-[50vh] bg-[#1F1F1F] px-[5%] flex flex-row items-baseline text-white relative"
       id="about"
     >
-      <div className="flex flex-col">
+      <div className="flex flex-col z-10">
         <h1 className="text-[128px] font-bebas leading-[128px] m-0">
           HELLO. I AM <span className="text-[#EEAB3C]">ARTEM</span>
         </h1>
 
-        <p className="max-w-[50%] text-[32px] font-plex leading-none mt-4 indent-60">
+        <p className="w-full md:max-w-[50%] text-[32px] font-plex leading-none mt-4 indent-20 md:indent-60">
           I use my passion and skills to create digital products and
           experiences. National and international customers rely on me for
           design, implementation, and management of their digital products. As
@@ -25,7 +25,7 @@ const About: React.FC = () => {
       {/* The 3D model is positioned absolutely and aligned properly */}
       <MainFunk />
       <div className="absolute right-[30%] ">
-        <div className="relative h-full flex justify-end items-center top-[70vh]">
+        <div className="hidden relative h-full md:flex justify-end items-center top-[70vh]">
           <svg
             width="627"
             height="230"

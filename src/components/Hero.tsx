@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
             strokeLinecap="round"
           />
         </svg>
-        <div className="flex flex-row gap-10 items-center opacity-5">
+        <div className="hidden md:flex flex-row gap-10 items-center opacity-5">
           <Star width="150px" height="150px" color="#FFFFFF" />
           <h1 className="text-[120px] font-bebas leading-none ">SCROLL</h1>
         </div>
@@ -88,7 +88,7 @@ const Hero: React.FC = () => {
       <div className="h-screen flex flex-col justify-end">
         <div className="absolute right-[10vw] top-[20vh] flex flex-row items-center">
           <Star width="50px" height="50px" color="#EEAB3C" />
-          <h1 className="text-[128px] font-poiret leading-[128px] m-0">
+          <h1 className="text-[80px] leading-[80px] md:text-[128px] font-poiret md:leading-[128px] m-0">
             {currentDate.split(" ")[0]}
           </h1>
           <div className="flex flex-col ml-4">
@@ -102,7 +102,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="flex flex-col font-lancelot">
           <p className="text-[48px] text-[#EEAB3C] leading-none">motivated</p>
-          <h1 className="font-bebas text-[300px] leading-none tracking-[-1rem]">
+          <h1 className="font-bebas text-[100px] md:text-[300px] leading-none md:tracking-[-1rem]">
             DEVELOPER
           </h1>
         </div>

@@ -22,7 +22,7 @@ const Works: React.FC = () => {
     <section className="py-[5rem] bg-[#1F1F1F] px-[5%] text-white" id="works">
       <div className="relative flex flex-col">
         {/* Background SVG */}
-        <div className="absolute top-[30%] left-[55%] w-full h-full pointer-events-none z-0">
+        <div className="hidden md:block absolute top-[30%] left-[55%] w-full h-full pointer-events-none z-0">
           <svg
             width="287"
             height="310"
@@ -49,7 +49,7 @@ const Works: React.FC = () => {
         </div>
 
         {/* Star Component */}
-        <div className="absolute bottom-[20vh] left-[10vw] z-10 pointer-events-none">
+        <div className="hidden md:block absolute bottom-[20vh] left-[10vw] z-10 pointer-events-none">
           <Star width="300px" height="300px" color="#EEAB3C" />
         </div>
 
@@ -58,9 +58,11 @@ const Works: React.FC = () => {
           <img
             src={worksShape}
             alt="works shape"
-            className="w-[172px] h-[172px]"
+            className="w-[100px] h-[100px] md:w-[172px] md:h-[172px]"
           />
-          <h1 className="text-[200px] font-bebas leading-none ml-8">WORKS</h1>
+          <h1 className="text-[100px] md:text-[200px] font-bebas leading-none ml-4 md:ml-8">
+            WORKS
+          </h1>
         </div>
 
         {/* Works Content */}
@@ -68,7 +70,7 @@ const Works: React.FC = () => {
           {works.map((work, idx) => (
             <div
               key={idx}
-              className={`w-1/2 flex flex-col p-6 ${
+              className={`w-full md:w-1/2 flex flex-col p-6 md:${
                 idx % 2 === 0 ? "self-start" : "self-end"
               }`}
             >
