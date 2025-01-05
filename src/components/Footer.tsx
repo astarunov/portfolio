@@ -103,7 +103,7 @@ const Footer: React.FC = () => {
 
       {/* Custom Alert */}
       {showAlert && (
-        <div className="fixed top-20 left-1/2 transform -translate-x-1/2 bg-[#EEAB3C] text-plex text-white px-6 py-3 rounded-[50px] transition-opacity duration-300">
+        <div className="fixed top-16 md:top-20 text-[10px] md:text-[20px] left-1/2 transform -translate-x-1/2 bg-[#EEAB3C] text-plex text-white px-6 py-3 rounded-[50px] transition-opacity duration-300 flex items-center justify-center text-center">
           Email copied to clipboard!
         </div>
       )}
