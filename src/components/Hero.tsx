@@ -47,7 +47,8 @@ const Hero: React.FC = () => {
       className={`
         relative
         h-[200vh]
-        bg-hero-bg
+        md:bg-hero-bg
+        bg-mobile-bg
         bg-cover
         bg-fixed
         bg-center

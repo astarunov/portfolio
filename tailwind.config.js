@@ -33,6 +33,7 @@ module.exports = {
       },
       backgroundImage: {
         "hero-bg": "url('/src/assets/bgImage.svg')",
+        "mobile-bg": "url('/src/assets/mobile-bg.svg')",
       },
       fontFamily: {
         bebas: ['"Bebas Neue"', "sans-serif"],
