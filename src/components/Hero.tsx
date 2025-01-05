@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import Star from "./Star";
+import bgImage from "../assets/bgImage.jpg";
 
 const Hero: React.FC = () => {
   const [overlayOpacity, setOverlayOpacity] = useState(0);
@@ -44,16 +45,16 @@ const Hero: React.FC = () => {
   return (
     <section
       ref={heroRef}
-      className="
+      className={`
         relative
         h-[200vh]
-        bg-hero-bg
+        bg-url(${bgImage})
         bg-cover
         bg-fixed
         bg-center
         text-white
         px-[5%]
-      "
+      `}
     >
       {/* Always visible SVG */}
       <div className="absolute top-[50%] left-[5vw] z-10 flex flex-row gap-96 items-center">
@@ -68,14 +69,14 @@ const Hero: React.FC = () => {
           <path
             d="M128.001 1.98847C429.5 444 -268.5 384 139.001 976.988"
             stroke="white"
-            stroke-width="4"
-            stroke-linecap="round"
+            strokeWidth="4"
+            strokeLinecap="round"
           />
           <path
             d="M139 977L146 945"
             stroke="white"
-            stroke-width="4"
-            stroke-linecap="round"
+            strokeWidth="4"
+            strokeLinecap="round"
           />
         </svg>
         <div className="flex flex-row gap-10 items-center opacity-5">

@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import footerShape from "../assets/footerShape.svg";
 import arrow from "../assets/arrow.svg";
-import { interests } from "../constants";
+
 import Interest from "./Interest";
 
 const Footer: React.FC = () => {
@@ -81,15 +81,12 @@ const Footer: React.FC = () => {
         </h1>
         <div className="flex flex-wrap w-[900px] justify-center mt-10 gap-4">
           {Array.from({ length: 14 }).map((_, idx) => (
-            <>
+            <div key={`spacer-${idx}`}>
               {idx === 4 && (
-                <div
-                  key={`spacer-${idx}`}
-                  className="w-[100px] h-[1px] flex-shrink-0"
-                ></div>
+                <div className="w-[100px] h-[1px] flex-shrink-0"></div>
               )}
               <Interest key={idx} />
-            </>
+            </div>
           ))}
         </div>
       </div>

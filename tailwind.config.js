@@ -32,7 +32,7 @@ module.exports = {
         },
       },
       backgroundImage: {
-        "hero-bg": "url('src/assets/bgImage.jpg')",
+        "hero-bg": "url('../assets/bgImage.jpg')",
       },
       fontFamily: {
         bebas: ['"Bebas Neue"', "sans-serif"],

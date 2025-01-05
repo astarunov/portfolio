@@ -11,7 +11,7 @@ type GLTFResult = {
 
 // Model component
 const Model: React.FC<{ scale?: number }> = (props) => {
-  const { scene } = useGLTF("/vierge3.glb") as GLTFResult;
+  const { scene } = useGLTF("/vierge3.glb") as unknown as GLTFResult;
 
   // Reference to the scene for rotation
   const ref = useRef<THREE.Group>(null);
