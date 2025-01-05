@@ -70,7 +70,7 @@ const Works: React.FC = () => {
           {works.map((work, idx) => (
             <div
               key={idx}
-              className={`w-full md:w-1/2 flex flex-col p-6 md:${
+              className={`w-full md:w-1/2 flex flex-col p-6 ${
                 idx % 2 === 0 ? "self-start" : "self-end"
               }`}
             >
