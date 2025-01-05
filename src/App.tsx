@@ -5,13 +5,13 @@ import Nav from "./components/Nav/Nav";
 import Works from "./components/Works/Works";
 function App() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Nav />
       <Hero />
       <About />
       <Works />
       <Footer />
-    </>
+    </div>
   );
 }
 

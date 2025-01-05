@@ -41,11 +41,11 @@ const MainFunk: React.FC = () => {
     <div
       style={{
         position: "absolute",
-        top: "50%", // Adjust based on your layout
+        top: "40%", // Adjust based on your layout
         transform: "translateY(-50%)", // Center vertically
-        right: "5%", // Adjust position from the right
-        width: "600px",
-        height: "600px",
+        right: "-10vw", // Adjust position from the right
+        width: "1000px",
+        height: "1000px",
         pointerEvents: "none", // Ensure it doesn't block interactions
       }}
     >

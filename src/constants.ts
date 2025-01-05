@@ -14,6 +14,7 @@ export const works = [
       "TypeScript",
       "Figma",
     ],
+    link: "https://orionic-website.vercel.app/",
   },
   {
     image: chromeEx,
@@ -28,5 +29,16 @@ export const works = [
       "Figma",
       "Flask",
     ],
+    link: "#",
   },
+];
+
+export const interests = [
+  "Web Development",
+  "Machine Learning",
+  "UI/UX Design",
+  "Open Source",
+  "Cybersecurity",
+  "Quantum Computing",
+  "Blockchain",
 ];
