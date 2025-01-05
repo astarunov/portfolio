@@ -54,6 +54,7 @@ const Hero: React.FC = () => {
     bg-center
     text-white
     px-[5%]
+    w-screen
   `}
       style={{
         backgroundImage: `url(${mobileBG})`,

@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
         w-screen
         h-[200vh]
         md:bg-hero-bg
-        
+        w-screen
         bg-cover
         bg-center
         bg-fixed
