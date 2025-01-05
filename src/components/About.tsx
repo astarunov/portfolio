@@ -8,7 +8,7 @@ const About: React.FC = () => {
       id="about"
     >
       <div className="flex flex-col z-10">
-        <h1 className="text-[128px] font-bebas leading-[128px] m-0">
+        <h1 className="text-[80px] leading-[80px] md:text-[128px] font-bebas md:leading-[128px] m-0">
           HELLO. I AM <span className="text-[#EEAB3C]">ARTEM</span>
         </h1>
 
