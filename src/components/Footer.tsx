@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import footerShape from "../assets/footerShape.svg";
 import arrow from "../assets/arrow.svg";
-import { TypewriterEffectSmooth } from "./UI/typewriter";
 
 import { stack } from "../constants";
 
