@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
         md:bg-hero-bg
         bg-hero-bg-mobile
         
-        bg-cover
+        md:bg-cover
         bg-fixed
         bg-center
         text-white
