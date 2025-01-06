@@ -32,7 +32,7 @@ const About: React.FC = () => {
           <TypewriterEffectSmooth words={words} />
         </h1>
 
-        <p className="w-full md:max-w-[50%] text-[32px] font-plex leading-none mt-4 indent-20 md:indent-60">
+        <p className="w-full md:max-w-[50%] text-[20px] leading-[20px] md:text-[32px] font-plex md:leading-none mt-4 indent-20 md:indent-60">
           I am a passionate web developer and a computer science student at RWTH
           Aachen University, specializing in creating innovative digital
           products and user-centric experiences. I leverage my technical
