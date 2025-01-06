@@ -89,7 +89,7 @@ const Hero: React.FC = () => {
 
       {/* Hero content */}
       <div className="relative h-screen flex flex-col justify-end">
-        <h1 className="md:hidden absolute top-[35%] text-[60px] leading-[60px] opacity-5 font-bebas ">
+        <h1 className="md:hidden absolute top-[35%] text-[40px] leading-[40px] opacity-5 font-bebas ">
           Best viewed on desktop for an optimal user experience
         </h1>
         <div className="absolute right-[5vw] md:right-[10vw] top-[20vh] flex flex-row items-center">
