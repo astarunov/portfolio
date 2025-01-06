@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
         relative
         h-[200vh]
         md:bg-hero-bg
-        bg-hero-bg-mobile
+        bg-[#1F1F1F]
         
         md:bg-cover
         bg-fixed
@@ -88,7 +88,10 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Hero content */}
-      <div className="h-screen flex flex-col justify-end">
+      <div className="relative h-screen flex flex-col justify-end">
+        <h1 className="md:hidden absolute top-[35%] text-[60px] leading-[60px] opacity-5 font-bebas ">
+          Best viewed on desktop for an optimal user experience
+        </h1>
         <div className="absolute right-[5vw] md:right-[10vw] top-[20vh] flex flex-row items-center">
           <Star width="50px" height="50px" color="#EEAB3C" />
           <h1 className="text-[80px] leading-[80px] md:text-[128px] font-poiret md:leading-[128px] m-0">
