@@ -40,7 +40,13 @@ const Nav: React.FC = () => {
               <a href="#works">works</a>
             </li>
             <li className="transition duration-300 hover:scale-110">
-              <a href="#contact">contact</a>
+              <a
+                href="mailto:astarunov444@gmail.com?subject=Hello%20Artem&body=Hi%20Artem%2C%20let%27s%20connect!"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                contact
+              </a>
             </li>
           </ul>
         </div>

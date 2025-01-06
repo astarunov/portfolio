@@ -1,36 +1,13 @@
 import React from "react";
-import { InfiniteMovingCards } from "./Marquee";
 
-const Interest: React.FC = () => {
-  const testimonials = [
-    {
-      title: "Web dev.",
-    },
-    {
-      title: "Prompt Engeneering",
-    },
-    {
-      title: "Software dev.",
-    },
-    {
-      title: "Sports",
-    },
-    {
-      title: "Business",
-    },
-  ];
+interface InterestProps {
+  interst: string;
+}
 
+const Interest: React.FC<InterestProps> = ({ interst }) => {
   return (
-    <div
-      className="relative overflow-hidden rounded-[50px]
-             border border-white text-white text-[32px]
-             flex items-center justify-center cursor-pointer w-[130px] md:w-[200px] h-[50px]"
-    >
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="left"
-        speed="normal"
-      />
+    <div className="cursor-pointer border border-white min-w-[100px] text-[40px] rounded-[50px] h-[70px] flex items-center justify-center px-4 hover:bg-white hover:text-[#1F1F1F] transition duration-500">
+      {interst}
     </div>
   );
 };

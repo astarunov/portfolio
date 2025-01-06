@@ -1,25 +1,47 @@
 import React from "react";
 import MainFunk from "./Model";
+import { TypewriterEffectSmooth } from "./UI/typewriter";
 
 const About: React.FC = () => {
+  const words = [
+    {
+      text: "HELLO.",
+    },
+    {
+      text: "I",
+    },
+    {
+      text: "AM",
+    },
+    {
+      text: "ARTEM",
+      className: "text-[#EEAB3C] ",
+    },
+  ];
+
   return (
     <section
       className="pt-[10rem] pb-[50vh] bg-[#1F1F1F] px-[5%] flex flex-row items-baseline text-white relative"
       id="about"
     >
       <div className="flex flex-col z-10">
-        <h1 className="text-[80px] leading-[80px] md:text-[128px] font-bebas md:leading-[128px] m-0">
+        <h1 className="block md:hidden text-[80px] leading-[80px]  font-bebas m-0">
           HELLO. I AM <span className="text-[#EEAB3C]">ARTEM</span>
+        </h1>
+        <h1 className="hidden md:block md:text-[128px] font-bebas md:leading-[128px] m-0">
+          <TypewriterEffectSmooth words={words} />
         </h1>
 
         <p className="w-full md:max-w-[50%] text-[32px] font-plex leading-none mt-4 indent-20 md:indent-60">
-          I use my passion and skills to create digital products and
-          experiences. National and international customers rely on me for
-          design, implementation, and management of their digital products. As
-          an independent, I work also with web agencies, companies, startups and
-          individuals to create a blueprint for the digital business. Advisor
-          and partner of some digital and fintech startups. Also, Judge at CSSDA
-          and The Webby.
+          I am a passionate web developer and a computer science student at RWTH
+          Aachen University, specializing in creating innovative digital
+          products and user-centric experiences. I leverage my technical
+          expertise and problem-solving abilities to design, implement, and
+          optimize scalable and efficient digital solutions that drive business
+          growth and enhance user engagement. My collaborative mindset and
+          dedication to continuous improvement make me a valuable contributor to
+          any team, ensuring successful project execution and alignment with
+          company goals.
         </p>
       </div>
       {/* The 3D model is positioned absolutely and aligned properly */}

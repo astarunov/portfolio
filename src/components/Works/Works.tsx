@@ -74,31 +74,60 @@ const Works: React.FC = () => {
                 idx % 2 === 0 ? "self-start" : "self-end"
               }`}
             >
-              <a href={work.link}>
-                <img
-                  src={work.image}
-                  alt={`${work.title} image`}
-                  className="w-full rounded-[20px] hover:scale-105 transition duration-300"
-                />
-                <p className="mt-3 text-[32px] font-plex text-center">
-                  {work.title}
-                </p>
-                <div className="flex flex-wrap gap-2 justify-center w-full mt-3">
-                  {work.stack.map((stack, stackIdx) => (
-                    <motion.div
-                      variants={fadeInAnimationVariants(stackIdx)}
-                      initial="initial"
-                      whileInView="animate"
-                      viewport={{ once: true }}
-                      key={stackIdx}
-                    >
-                      <div className="border border-white rounded-[50px] h-[44px] flex items-center justify-center px-4 hover:bg-white hover:text-[#1F1F1F] transition duration-500">
-                        {stack}
-                      </div>
-                    </motion.div>
-                  ))}
+              {idx % 2 === 0 ? (
+                <a href={work.link}>
+                  <img
+                    src={work.image}
+                    alt={`${work.title} image`}
+                    className="w-full rounded-[20px] hover:scale-105 transition duration-300"
+                  />
+                  <p className="mt-3 text-[32px] font-plex text-center">
+                    {work.title}
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center w-full mt-3">
+                    {work.stack.map((stack, stackIdx) => (
+                      <motion.div
+                        variants={fadeInAnimationVariants(stackIdx)}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        key={stackIdx}
+                      >
+                        <div className="border border-white rounded-[50px] h-[44px] flex items-center justify-center px-4 hover:bg-white hover:text-[#1F1F1F] transition duration-500">
+                          {stack}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
+                </a>
+              ) : (
+                <div className="cursor-default">
+                  {" "}
+                  <img
+                    src={work.image}
+                    alt={`${work.title} image`}
+                    className="w-full rounded-[20px] hover:scale-105 transition duration-300"
+                  />
+                  <p className="mt-3 text-[32px] font-plex text-center">
+                    {work.title}
+                  </p>
+                  <div className="flex flex-wrap gap-2 justify-center w-full mt-3">
+                    {work.stack.map((stack, stackIdx) => (
+                      <motion.div
+                        variants={fadeInAnimationVariants(stackIdx)}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{ once: true }}
+                        key={stackIdx}
+                      >
+                        <div className="border border-white rounded-[50px] h-[44px] flex items-center justify-center px-4 hover:bg-white hover:text-[#1F1F1F] transition duration-500">
+                          {stack}
+                        </div>
+                      </motion.div>
+                    ))}
+                  </div>
                 </div>
-              </a>
+              )}
             </div>
           ))}
         </div>

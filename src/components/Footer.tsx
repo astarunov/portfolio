@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from "react";
 import footerShape from "../assets/footerShape.svg";
 import arrow from "../assets/arrow.svg";
-import mobileBG from "../assets/mobile-bg.svg";
+import { TypewriterEffectSmooth } from "./UI/typewriter";
+
+import { stack } from "../constants";
 
 import Interest from "./Interest";
 
@@ -75,23 +77,18 @@ const Footer: React.FC = () => {
         text-white
         
       "
-      style={{
-        backgroundImage: `url(${mobileBG})`,
-      }}
     >
       {/* Interested Text */}
       <div className="absolute z-20 top-[30vh] h-[100vh] text-center flex flex-col items-center w-full">
-        <h1 className="text-[64px] font-lancelot  leading-[64px]">
-          I am always <span className="text-[#EEAB3C]">interested</span> in
+        <h1 className="text-[100px] font-lancelot  leading-[100px]">
+          My <span className="text-[#EEAB3C]">stack</span>
         </h1>
         <div className="flex flex-wrap w-[90%] md:w-[900px] justify-center mt-10 gap-4">
-          {Array.from({ length: 14 }).map((_, idx) => (
-            <div key={`spacer-${idx}`}>
-              {idx === 4 && (
-                <div className="w-[100px] h-[1px] flex-shrink-0"></div>
-              )}
-              <Interest key={idx} />
-            </div>
+          {stack.map((st, idx) => (
+            <React.Fragment key={`spacer-${idx}`}>
+              {idx === 4 && <div className="w-[90px] h-1" />}
+              <Interest interst={st} key={idx} />
+            </React.Fragment>
           ))}
         </div>
       </div>
@@ -125,7 +122,7 @@ const Footer: React.FC = () => {
             <br />
             <span className="text-[#EEAB3C]">CONNECT</span>
           </h1>
-          <div className="flex flex-row w-full justify-end items-start md:items-center mt-4">
+          <div className="flex flex-row w-full justify-end items-start md:items-center mt-4 hover:scale-105 transition duration-500 origin-center">
             <img
               src={arrow}
               alt="arrow"

@@ -42,3 +42,17 @@ export const interests = [
   "Quantum Computing",
   "Blockchain",
 ];
+
+export const stack = [
+  "React",
+  "TypeScript",
+  "TailwindCSS",
+  "Next.js",
+  "Vite",
+  "Redux",
+  "UI Libraries",
+  "ESLint",
+  "Vercel",
+  "AWS",
+  " git ",
+];

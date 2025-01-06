@@ -49,9 +49,9 @@ const Hero: React.FC = () => {
         h-[200vh]
         md:bg-hero-bg
         bg-hero-bg-mobile
-        bg-mo
+        
         bg-cover
-        md:bg-fixed
+        bg-fixed
         bg-center
         text-white
         px-[5%]
@@ -59,9 +59,9 @@ const Hero: React.FC = () => {
       `}
     >
       {/* Always visible SVG */}
-      <div className="absolute top-[50%] left-[5vw] z-10 flex flex-row gap-96 items-center">
+      <div className="absolute top-[45%] md:top-[45%] left-[5vw] z-10 flex flex-row gap-96 items-center">
         <svg
-          className="scale-[0.85]"
+          className="md:scale-[0.80] "
           width="215"
           height="979"
           viewBox="0 0 215 979"
@@ -103,7 +103,7 @@ const Hero: React.FC = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col font-lancelot">
+        <div className="flex flex-col font-lancelot mb-32 md:mb-0">
           <p className="text-[48px] text-[#EEAB3C] leading-none">motivated</p>
           <h1 className="font-bebas text-[100px] md:text-[300px] leading-none md:tracking-[-1rem]">
             DEVELOPER
